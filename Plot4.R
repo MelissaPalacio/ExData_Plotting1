@@ -8,7 +8,7 @@ with(subsetdata, {
         lines(datetime, Sub_metering_2, col ="red", type = "l")
         lines(datetime, Sub_metering_3, col = "blue", type = "l")
 })
-legend("topright", col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=1, lwd=2.5)
+legend("topright", col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty = 1, bty = "n")
 plot(datetime, Voltage, type = "l", ylab = "Voltage (Volt)", xlab = "")
 plot(datetime, Global_reactive_power, type = "l", ylab = "Global Reactive Power (Kilowatts)", xlab = "")
 dev.copy(png,"plot4.png", width=480, height=480)
